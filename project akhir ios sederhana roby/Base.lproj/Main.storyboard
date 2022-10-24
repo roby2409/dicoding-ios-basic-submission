@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wiL-HG-URV">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="MCE-wR-axh">
+            <objects>
+                <viewController id="wiL-HG-URV" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="44G-E9-zf1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicoding-header-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3MN-dY-D5c">
+                                <rect key="frame" x="16" y="37" width="139" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Ucm-RG-cRH"/>
+                                    <constraint firstAttribute="width" constant="139" id="dYD-At-qmo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to roby app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RR-ub-Vsz">
+                                <rect key="frame" x="16" y="96" width="250" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Agb-mC-xMI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berikut adalah contoh list bahasa pemrograman terbaik" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYN-nj-0Su">
+                                <rect key="frame" x="16" y="132" width="256" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Zxo-H9-Qun"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LI6-oR-6LO">
+                                <rect key="frame" x="0.0" y="179" width="320" height="301"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IjB-Sz-5Cq"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iYN-nj-0Su" firstAttribute="leading" secondItem="IjB-Sz-5Cq" secondAttribute="leading" constant="16" id="36u-dw-bIg"/>
+                            <constraint firstItem="1RR-ub-Vsz" firstAttribute="top" secondItem="3MN-dY-D5c" secondAttribute="bottom" constant="8" symbolic="YES" id="4Wn-q8-lIl"/>
+                            <constraint firstItem="3MN-dY-D5c" firstAttribute="top" secondItem="IjB-Sz-5Cq" secondAttribute="top" constant="37" id="7ks-R0-Rdy"/>
+                            <constraint firstItem="IjB-Sz-5Cq" firstAttribute="trailing" secondItem="1RR-ub-Vsz" secondAttribute="trailing" constant="54" id="8mH-A6-C6s"/>
+                            <constraint firstItem="LI6-oR-6LO" firstAttribute="leading" secondItem="IjB-Sz-5Cq" secondAttribute="leading" id="FcO-rG-JfK"/>
+                            <constraint firstItem="iYN-nj-0Su" firstAttribute="top" secondItem="1RR-ub-Vsz" secondAttribute="bottom" constant="15.5" id="Sai-pc-55g"/>
+                            <constraint firstItem="1RR-ub-Vsz" firstAttribute="top" secondItem="3MN-dY-D5c" secondAttribute="bottom" constant="8" symbolic="YES" id="UUc-lk-Kul"/>
+                            <constraint firstItem="1RR-ub-Vsz" firstAttribute="leading" secondItem="IjB-Sz-5Cq" secondAttribute="leading" constant="16" id="ZFB-Py-i6G"/>
+                            <constraint firstItem="3MN-dY-D5c" firstAttribute="top" secondItem="IjB-Sz-5Cq" secondAttribute="top" constant="37" id="fP0-wM-Qfl"/>
+                            <constraint firstItem="IjB-Sz-5Cq" firstAttribute="bottom" secondItem="LI6-oR-6LO" secondAttribute="bottom" id="gfc-m3-MEt"/>
+                            <constraint firstItem="IjB-Sz-5Cq" firstAttribute="trailing" secondItem="LI6-oR-6LO" secondAttribute="trailing" id="jfh-lB-qaA"/>
+                            <constraint firstItem="iYN-nj-0Su" firstAttribute="top" secondItem="1RR-ub-Vsz" secondAttribute="bottom" constant="15.5" id="lr7-Pr-UJY"/>
+                            <constraint firstItem="LI6-oR-6LO" firstAttribute="top" secondItem="iYN-nj-0Su" secondAttribute="bottom" id="qIl-L9-rcy"/>
+                            <constraint firstItem="3MN-dY-D5c" firstAttribute="leading" secondItem="IjB-Sz-5Cq" secondAttribute="leading" constant="16" id="thA-qj-Pyc"/>
+                            <constraint firstItem="IjB-Sz-5Cq" firstAttribute="trailing" secondItem="iYN-nj-0Su" secondAttribute="trailing" constant="48" id="ti1-3E-aW5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="semuaBahasaPemrogramanTableView" destination="LI6-oR-6LO" id="C2Q-xQ-gp1"/>
+                        <segue destination="EYX-YP-lw6" kind="show" identifier="moveToDetail" id="X7a-cx-pgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VmC-52-Tbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-859" y="-375"/>
+        </scene>
+        <!--Detail Bahasa Pemrograman View Controller-->
+        <scene sceneID="OlV-Ku-O5m">
+            <objects>
+                <viewController id="EYX-YP-lw6" customClass="DetailBahasaPemrogramanViewController" customModule="project_akhir_ios_sederhana_roby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0pR-HT-p6A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sd3-at-wt0">
+                                <rect key="frame" x="60" y="24" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bio-ug-b5j"/>
+                                    <constraint firstAttribute="height" constant="200" id="TRb-DH-dUg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-js-BC7">
+                                <rect key="frame" x="16" y="279" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCb-OP-OlP">
+                                <rect key="frame" x="139" y="232" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fpz-yF-EiO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sd3-at-wt0" firstAttribute="top" secondItem="Fpz-yF-EiO" secondAttribute="top" constant="24" id="Gl3-em-x6g"/>
+                            <constraint firstItem="Sd3-at-wt0" firstAttribute="centerX" secondItem="Fpz-yF-EiO" secondAttribute="centerX" id="Nlg-BE-eRE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DVb-nV-E2x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39f-gm-go9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dicoding-header-logo" width="264.5" height="67"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
